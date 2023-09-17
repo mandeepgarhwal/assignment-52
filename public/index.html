@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            align-items: center;
+            background-color: blueviolet;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80vh;
+            width: 50vw;
+            align-items: center;
+            background-color: antiquewhite;
+
+        }
+        form input{
+            width: 30vw;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: antiquewhite;
+            box-shadow: none;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+            outline: none;
+
+
+        }
+        #btn{
+            background-color: aqua;
+            height: 25px;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        form h1{
+            font-size: 40px;
+            text-decoration:  2px black underline;
+        }
+    </style>
+</head>
+<body>
+    <form action="/api/Register", method="post" >
+    <h1>Register Here</h1>
+
+    <input type="text", placeholder="Enter your name", name="name", id="name">
+    <input type="text", placeholder="Enter your email", name="email", id="email">
+    <input type="password", placeholder="Enter your password", name="password", id="password">
+
+    <input type="submit", value="Register", id="btn">
+</form>
+</body>
+</html>
